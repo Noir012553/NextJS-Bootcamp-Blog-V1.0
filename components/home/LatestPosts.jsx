@@ -48,8 +48,7 @@ const postsData = [
     title: "The Impact of Technology on the Workplace: How Technology is Changing",
     author: { name: "Tracey Wilson", avatar: "/assets/Image (2).png" },
     date: "August 20, 2022"
-  }
-  ,
+  },
   {
     id: 7,
     image: "/assets/Rectangle 38 (6).png",
@@ -87,7 +86,7 @@ export default function LatestPosts() {
         ))}
       </div>
       
-      <button className="px-5 py-3 border border-[rgba(105,106,117,0.3)] rounded-md text-dark-600 font-medium text-base hover:bg-gray-100 transition-colors">
+      <button className="px-5 py-3 border border-[rgba(105,106,117,0.3)] rounded-md text-dark-600 font-medium text-base hover:bg-brand-blue transition-colors">
         View All Post
       </button>
     </div>

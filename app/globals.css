@@ -2,11 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;1,400&family=Work+Sans:wght@400;500;600&display=swap');
 
 @theme {
-  /* Font Families */
   --font-sans: 'Work Sans', sans-serif;
   --font-serif: 'Source Serif Pro', serif;
   
-  /* Custom Colors for Single Post */
   --color-brand-blue: #4B6BFB;
   --color-dark-heading: #181A2A;
   --color-dark-content: #3B3C4A;
@@ -18,13 +16,29 @@
   --color-author-role: #696a75;
   --color-author-bio-text: #3b3c4a;
   --color-author-bg: #f6f6f7;
+  
+  --color-dark-bg: #0f0f0f;
+  --color-dark-surface: #1a1a1a;
+  --color-dark-text: #ffffff;
+  --color-dark-text-secondary: #b0b0b0;
+  --color-dark-border: #2a2a2a;
 }
 
-/* Utility classes */
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  @apply bg-white dark:bg-dark-bg text-dark-heading dark:text-dark-text;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 .font-sans {
   font-family: var(--font-sans);
 }
 
 .font-serif {
   font-family: var(--font-serif);
+}
+
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }

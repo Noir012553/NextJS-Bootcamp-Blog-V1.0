@@ -1,4 +1,6 @@
+'use client';
 import Link from 'next/link';
+import { useTheme } from '@/contexts/ThemeContext';
 
 export default function PageTitleWithHero({ 
   title = "Page Title", 
@@ -17,22 +19,23 @@ export default function PageTitleWithHero({
     date: "August 20, 2022"
   }
 }) {
+  const { theme } = useTheme();
+
   return (
-    <section className="bg-white">
+    <section className="bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Page Title and Breadcrumbs */}
         <div className="text-center py-6">
-          <h1 className="text-3xl font-semibold text-dark-gray">{title}</h1>
+          <h1 className="text-3xl font-semibold text-dark-gray dark:text-white">{title}</h1>
           <nav className="mt-2 flex justify-center items-center space-x-3 text-base">
             {breadcrumbs.map((crumb, index) => (
               <div key={index} className="flex items-center space-x-3">
                 {index > 0 && <span className="text-gray-400">/</span>}
                 {index === breadcrumbs.length - 1 ? (
-                  <span className="text-light-gray">{crumb.label}</span>
+                  <span className="text-light-gray dark:text-gray-400">{crumb.label}</span>
                 ) : (
                   <Link 
                     href={crumb.href} 
-                    className="text-medium-gray hover:text-brand-blue"
+                    className="text-medium-gray dark:text-gray-300 hover:text-brand-blue transition-colors"
                   >
                     {crumb.label}
                   </Link>
@@ -42,7 +45,6 @@ export default function PageTitleWithHero({
           </nav>
         </div>
 
-        {/* Hero Post */}
         <div className="relative rounded-xl overflow-hidden mt-2">
           <img 
             src={heroPost.image} 

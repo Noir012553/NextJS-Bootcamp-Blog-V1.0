@@ -48,8 +48,7 @@ const postsData = [
     title: "The Impact of Technology on the Workplace: How Technology is Changing",
     author: { name: "Tracey Wilson", avatar: "/assets/Image (2).png" },
     date: "August 20, 2022"
-  }
-  ,
+  },
   {
     id: 7,
     image: "/assets/Rectangle 38 (6).png",
@@ -79,7 +78,7 @@ const postsData = [
 export default function LatestPosts() {
   return (
     <div className="max-w-[1216px] mx-auto px-4 w-full flex flex-col items-center gap-8 pb-15">
-      <h2 className="font-work-sans font-bold text-2xl text-dark-900 self-start">Latest Post</h2>
+      <h2 className="font-work-sans font-bold text-2xl text-dark-900 self-start dark:text-gray-900">Latest Post</h2>
       
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {postsData.map((post) => (

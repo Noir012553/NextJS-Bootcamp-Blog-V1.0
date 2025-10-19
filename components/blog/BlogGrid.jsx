@@ -48,8 +48,7 @@ const postsData = [
     title: "The Impact of Technology on the Workplace: How Technology is Changing",
     author: { name: "Tracey Wilson", avatar: "/assets/Image (2).png" },
     date: "August 20, 2022"
-  }
-  ,
+  },
   {
     id: 7,
     image: "/assets/Rectangle 38 (6).png",
@@ -86,9 +85,8 @@ export default function BlogGrid() {
           ))}
         </div>
         
-        {/* Load More Button */}
         <div className="text-center mt-8">
-          <button className="border border-gray-600/20 rounded-md px-5 py-3 text-light-gray font-medium hover:bg-gray-100 transition-colors">
+          <button className="border border-gray-600/20 rounded-md px-5 py-3 text-light-gray font-medium hover:bg-brand-blue transition-colors">
             Load More
           </button>
         </div>

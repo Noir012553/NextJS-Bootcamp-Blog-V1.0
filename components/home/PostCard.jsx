@@ -8,7 +8,7 @@ export default function PostCard({ post }) {
       />
       
       <div className="p-2 flex flex-col gap-5">
-        <span className="bg-blue-50 text-brand-blue text-sm font-medium px-2.5 py-1 rounded-md self-start">
+        <span className="bg-blue-50 text-brand-blue dark:bg-[#4B6BFB0D] text-sm font-medium px-2.5 py-1 rounded-md self-start">
           {post.category}
         </span>
         

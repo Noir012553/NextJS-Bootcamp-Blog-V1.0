@@ -12,7 +12,7 @@ export default function BlogPostCard({ post }) {
       </Link>
       
       <div className="flex flex-col space-y-4 p-2 mt-2 flex-grow">
-        <span className="bg-blue-50 text-brand-blue px-2.5 py-1 rounded-md text-sm font-medium self-start">
+        <span className="bg-blue-50 text-brand-blue dark:bg-[#4B6BFB0D] px-2.5 py-1 rounded-md text-sm font-medium self-start">
           {post.category}
         </span>
         
