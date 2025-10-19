@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;1,400&family=Work+Sans:wght@400;500;600&display=swap');
+
+@theme {
+  /* Font Families */
+  --font-sans: 'Work Sans', sans-serif;
+  --font-serif: 'Source Serif Pro', serif;
+  
+  /* Custom Colors for Single Post */
+  --color-brand-blue: #4B6BFB;
+  --color-dark-heading: #181A2A;
+  --color-dark-content: #3B3C4A;
+  --color-gray-meta: #696A75;
+  --color-light-bg: #F6F6F7;
+  --color-light-border: #E8E8EA;
+  --color-ad-bg: #E8E8EA;
+  --color-author-name: #181a2a;
+  --color-author-role: #696a75;
+  --color-author-bio-text: #3b3c4a;
+  --color-author-bg: #f6f6f7;
+}
+
+/* Utility classes */
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
